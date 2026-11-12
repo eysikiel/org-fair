@@ -52,7 +52,7 @@ class EventTile extends StatelessWidget {
     // conditional expressions: event.cancelled ? ... : ...)
     return ListTile(
       leading: Icon(
-        event.canceled ? Icons.event_busy : Icons.event,
+        event.cancelled ? Icons.event_busy : Icons.event,
         color: event.cancelled ? colors.error : colors.primary,
       ),
       title: Text(
